@@ -1,0 +1,8 @@
+[Unit]
+Description=pgadmin-socket
+
+[Socket]
+ListenStream=5555
+
+[Install]
+WantedBy=sockets.target

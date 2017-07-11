@@ -1,0 +1,12 @@
+[Unit]
+Description=pgadmin
+
+[Service]
+Type=simple
+User=ubuntu
+Group=ubuntu
+ExecStart=/home/ubuntu/pgadmin/pgadmin-start.sh
+ExecStartPost=/bin/sleep 3
+
+[Install]
+WantedBy=multi-user.target
